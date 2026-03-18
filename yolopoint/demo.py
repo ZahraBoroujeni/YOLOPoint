@@ -5,11 +5,11 @@ from time import time
 import cv2
 import torch
 import torch.nn.functional as F
-from utils.utils import load_model, nms_fast
+from yolopoint.utils.utils import load_model, nms_fast
 import yaml
 from glob import glob
-from utils.plots_yolo import Annotator, colors
-from utils.general_yolo import non_max_suppression
+from yolopoint.utils.plots_yolo import Annotator, colors
+from yolopoint.utils.general_yolo import non_max_suppression
 
 
 class YoloPointFrontend:

@@ -27,10 +27,10 @@ import pkg_resources as pkg
 import torch
 import torchvision
 import yaml
-from utils.debug import timeit
+from .debug import timeit
 
 # from utils.downloads import gsutil_getsize
-from utils.metrics_yolo import box_iou, fitness
+from .metrics_yolo import box_iou, fitness
 
 # Settings
 torch.set_printoptions(linewidth=320, precision=5, profile='long')

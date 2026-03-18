@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 ```
 Optional step for deployment with ROS:
 ```
-$ pip install -r requirements_ros.txt
+$ rosdep install --from-paths src --ignore-src -r -y
 ```
 Huggingface accelerate is a wrapper used mainly for multi-gpu and half-precision training.
 You can adjust the settings prior to training with (recommended for faster training) or just skip it:
@@ -89,7 +89,7 @@ $ python src/demo.py --config configs/inference.yaml --weights weights/YOLOPoint
 ### Example if you are using ROS:
 First build the package and start a roscore:
 ```
-$ catkin build yolopoint
+$ colcon build --packages-up-to yolopoint
 $ roscore
 ```
 You can either choose to stream images from a directory or subscribe to a topic.

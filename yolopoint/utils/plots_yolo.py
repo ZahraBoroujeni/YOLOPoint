@@ -17,8 +17,8 @@ import numpy as np
 import torch
 from PIL import Image, ImageDraw, ImageFont
 
-from utils.general_yolo import clip_coords, is_ascii, is_chinese, user_config_dir, xywh2xyxy, xyxy2xywh#, increment_path
-from utils.metrics_yolo import fitness
+from .general_yolo import clip_coords, is_ascii, is_chinese, user_config_dir, xywh2xyxy, xyxy2xywh#, increment_path
+from .metrics_yolo import fitness
 
 # Settings
 CONFIG_DIR = user_config_dir()  # Ultralytics settings dir

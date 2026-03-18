@@ -5,3 +5,7 @@ src/.idea
 **/*__pycache__*
 *.pyc
 *.pth*
+
+**/build/*
+**/install/*
+**/log/*
